@@ -1,0 +1,274 @@
+/* ==========================================================================
+   ClassOptima – Global & Component Styles
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #090d16;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   Navbar Styles
+   ========================================================================== */
+.navbar {
+  background: #111827;
+  border-bottom: 1px solid #1e293b;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-badge {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.brand-title span {
+  color: #818cf8;
+}
+
+.role-tabs {
+  display: flex;
+  background: #0f172a;
+  padding: 4px;
+  border-radius: 10px;
+  gap: 4px;
+  border: 1px solid #1e293b;
+}
+
+.role-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.role-btn:hover {
+  color: #fff;
+}
+
+.role-btn.active {
+  background: #1e293b;
+  color: #fff;
+  border: 1px solid #334155;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.nav-user strong {
+  color: #fff;
+}
+
+.btn-logout {
+  padding: 6px 14px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
+
+/* ==========================================================================
+   Login Page Styles
+   ========================================================================== */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  padding: 36px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header .logo-badge {
+  margin: 0 auto 12px auto;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.demo-box {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.demo-title {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.demo-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-demo {
+  flex: 1;
+  padding: 8px;
+  background: #1e293b;
+  color: #fff;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-demo:hover {
+  background: #334155;
+  border-color: #6366f1;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: #6366f1;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+  opacity: 0.95;
+}
+
+/* ==========================================================================
+   Dashboard Content
+   ========================================================================== */
+.dashboard-content {
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dashboard-role {
+  color: #818cf8;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.welcome-box {
+  margin-top: 30px;
+  padding: 30px;
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+}
+
+.welcome-box p {
+  color: #94a3b8;
+  margin-top: 10px;
+}
